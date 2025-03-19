@@ -35,7 +35,7 @@ public class test1 {
 
             rev = rev * 10 + num%10;
             num = num/10;
-
+//Suhas
         }
         System.out.println(rev);*/
         Scanner sc = new Scanner(System.in);
