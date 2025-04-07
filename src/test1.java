@@ -4,48 +4,22 @@ public class test1 {
 
     public static void main(String args[]) {
 
-          /* // Swap two numbers
         Scanner sc = new Scanner(System.in);
-        System.out.println("enter 2 numbers");
+        System.out.println("How many fib numbers required");
 
-        int num1 = sc.nextInt();
-        int num2 = sc.nextInt();
-        int num;
-
-        num = num1;
-        num1 = num2;
-        num2 = num;
-
-        System.out.println("First number is "+num1);
-        System.out.println("Second number is "+num2);
-
-        num1 = num1 + num2;
-        num2 = num1 - num2;
-        num1 = num1 - num2;
-        System.out.println("After swapping " +num1 +" "+ num2 );*/
-
-        //Reverse number
-
-     /*   Scanner sc = new Scanner(System.in);
-        System.out.println("Enter a number");
         int num = sc.nextInt();
-        int rev = 0;
+        int num1 = 0;
+        int num2 = 1;
+        int sum = 1;
+        System.out.print(num1+" "+num2);
 
-        while (num!=0){
-
-            rev = rev * 10 + num%10;
-            num = num/10;
-//Suhas SJ
+        for (int i = 2; i < num; i++) {
+            sum = num1 + num2;
+            System.out.print(" "+sum);
+            num1 = num2;
+            num2 = sum;
         }
-        System.out.println(rev);*/
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Enter a number");
-        int num = sc.nextInt();
 
-        StringBuffer sb = new StringBuffer(String.valueOf(num));
-        StringBuffer rev = sb.reverse();
-        System.out.println(rev);
-        //
 
     }
 }
